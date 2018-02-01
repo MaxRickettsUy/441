@@ -6,4 +6,4 @@ All pseudocode used is originally from <a href="https://mitpress.mit.edu/books/i
 Algorithms included:
 
 - [x] Insertion Sort
-- [ ] Merge Sort
+- [x] Merge Sort
