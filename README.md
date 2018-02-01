@@ -7,3 +7,4 @@ Algorithms included:
 
 - [x] Insertion Sort
 - [x] Merge Sort
+- [ ] Heap Sort
