@@ -1,8 +1,8 @@
 # 441
 Algorithms Covered in Design &amp; Analysis of Algorithms
 
-All pseudocode used is originally from <a href="https://mitpress.mit.edu/books/introduction-algorithms">this book.</a>
-
+All pseudocode used is originally from <a href="https://mitpress.mit.edu/books/introduction-algorithms">CLRS.</a>
+.
 Algorithms included:
 
 - [x] Insertion Sort
