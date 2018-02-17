@@ -1,4 +1,4 @@
-
+import math
 '''
 Object contains an the original array to be sorted
 and a heap size which is the size of the current unsorted max heap
@@ -80,14 +80,16 @@ def PARENT(i):
 LEFT(i):
    return 2i
 '''
+#indices starting at 0
 def LEFT(i):
-    return 2*i
+    return (2*i + 1)
 '''
 RIGHT(i):
    return 2i + 1
 '''
+#indices starting at 0
 def RIGHT(i):
-    return ((2*i) + 1)
+    return ((2*i) + 2)
 
 '''
 MAX-HEAPIFY(A,i):
@@ -101,26 +103,27 @@ MAX-HEAPIFY(A,i):
         largest = r
     if largest != i
         exchange A[i]  with A[largest]
-    MAX-HEAPIFY(A,largest)
+        MAX-HEAPIFY(A,largest)
 '''
 def maxHeapify(Object,i):
     Array = Object.getArray()
     left = LEFT(i)
     right = RIGHT(i)
+    #print("i:" + str(i) + " LEFT:" + str(left) + " RIGHT:" + str(right) )
     largest = i
+    #print("heap size: " + str(Object.getHeapSize()))
     #if the left child node is in the heap and greater than the parent node
-    if left <= Object.heapSize() and Array[left] > Array[i]:
+    if left <= (Object.getHeapSize()-1) and Array[left] > Array[i]:
 		largest = left
     #if the right child node is in the heap and greater than the parent node
-    elif right <= Object.heapSize() and Array[right] > Array[largest]:
+    elif right <= (Object.getHeapSize()-1) and Array[right] > Array[largest]:
 		largest = right
     #if the parent node is less than its largest child
     if largest != i:
-		temp = Array[i]
-		Array[i] = Array[largest]
-		Array[largest] = temp
-    maxHeapify(Object,largest)
-
+        temp = Array[i]
+        Array[i] = Array[largest]
+        Array[largest] = temp
+        maxHeapify(Object,largest)
 '''
 BUILD-MAX-HEAP(A):
     A.heap-size = A.length
