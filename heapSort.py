@@ -17,29 +17,24 @@ class Object():
     def getArray(self):
         return self.array
 
-'''
-HEAP-MAXIMUM(A,1):
-   return A[1]
-'''
+#returns root of max heap or first element in array
 def heapMax(Object):
     Array = Object.getArray()
     return Array[0]
-'''
-HEAP-EXTRACT-MAX(A):
-    if A.heap-size < 1
-        perror "heap underflow"
-    max = A[1]
-    A[1] = A[A.heap-size]
-    A.heap-size = A.heap-size - 1
-    MAX-HEAPIFY(A,1)
-    return max
-'''
+
+#replaces current root node with last node
+#re-maxHeapifies heap after decreasing total getHeapSize
+#returns max
 def heapExtractMax(Objecet):
     Array = Object.getArray()
     if Object.heapSize() < 1:
 		print("error: heap underflow")
-    max = Array[0]
+    heapMax = Array[0]
     Array[0] = Array[Object.heapSize()]
+    Object.setHeapSize(Object.getHeapSize()-1)
+    maxHeapify(Object,0)
+    return heapMax
+
 '''
 HEAP-INCREASE-KEY(A,i,key):
     if key < A[i]:
@@ -49,7 +44,6 @@ HEAP-INCREASE-KEY(A,i,key):
         exchange A[i] with A[PARENT(i)]
         i = PARENT(i)
 '''
-
 def heapIncreaseKey(Object,i,key):
     Array = Object.getArray()
     if key < Array[i]:
@@ -60,6 +54,7 @@ def heapIncreaseKey(Object,i,key):
         Array[i] = Array[PARENT(i)]
         Array[PARENT(i)] = temp
         i = PARENT(i)
+
 '''MAX-HEAP-INSERT(A,key):
     A.heap-size = A.heap-size + 1
     A[A.heap-size] = -infiniti
@@ -70,41 +65,24 @@ def maxHeapInsert(Object,key):
     Object.setHeapSize(Object.getHeapSize()+ 1)
     Array[Object.getHeapSize()] = -1
     heapIncreaseKey(Object,key)
-'''
-PARENT(i):
-   return floor(i/2)
-'''
+
+#returns parent node of i
 def PARENT(i):
     return floor(i/2)
-'''
-LEFT(i):
-   return 2i
-'''
+
+#returns left child node of i
 #indices starting at 0
 def LEFT(i):
     return (2*i + 1)
-'''
-RIGHT(i):
-   return 2i + 1
-'''
+
+#returns right child node of i
 #indices starting at 0
 def RIGHT(i):
     return ((2*i) + 2)
 
-'''
-MAX-HEAPIFY(A,i):
-    l = LEFT(i)
-    r = RIGHT(i)
-    if l  <= A.heap-size and A[l]  > A[i]
-        largest =  l
-    else:
-        largest = i
-    if r <= A.heap-size and A[r]  > A[largest]
-        largest = r
-    if largest != i
-        exchange A[i]  with A[largest]
-        MAX-HEAPIFY(A,largest)
-'''
+#starting with index i, reorders part ofObjects array
+#into max heap. its possible for other subtrees to lack
+#correct structure and must be maxHeapified themselves
 def maxHeapify(Object,i):
     Array = Object.getArray()
     left = LEFT(i)
@@ -124,12 +102,9 @@ def maxHeapify(Object,i):
         Array[i] = Array[largest]
         Array[largest] = temp
         maxHeapify(Object,largest)
-'''
-BUILD-MAX-HEAP(A):
-    A.heap-size = A.length
-    for i = floor(A.length/2) downto 1
-        MAX-HEAPIFY(A,i)
-'''
+
+#iterates over Objects array using maxHeapify to make
+#entire array into max heap
 def buildMaxHeap(Object):
     Array = Object.getArray()
     Object.setHeapSize(len(Array))
@@ -137,14 +112,12 @@ def buildMaxHeap(Object):
     while i > 0:
 		maxHeapify(Object,i)
 		i -= 1
-'''
-HEAPSORT(A):
-    BUILD-MAX-HEAP(A)
-    for i = A.length downto 2
-        exchange A[1]  with A[i]
-        A.heap-size = A.heap-size - 1
-        MAX-HEAPIFY.A;1/
-'''
+
+#Objects array begins as entire max heap and
+#and as nodes are removed and array is sorted
+#the array and max heap become separate based on length
+#the heap sort becomes shorter, while all elements
+#remain in the array but are "removed" from heap
 def heapsort(Object):
     buildMaxHeap(Object)
     Array = Object.getArray()
