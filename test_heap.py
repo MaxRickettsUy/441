@@ -47,5 +47,13 @@ class TestHeap(unittest.TestCase):
         heapSort.buildMaxHeap(self.obj1)
         self.assertSequenceEqual(self.obj1.getArray(),maxHeap)
 
+    def test_heapSort(self):
+        array = [3,1,8,7,9,4,2,6,5,10]
+        sortedArray = [1,2,3,4,5,6,7,8,9,10]
+        self.obj1 = Object(len(array),array)
+        heapSort.heapsort(self.obj1)
+        self.assertSequenceEqual(self.obj1.getArray(),sortedArray)
+        print(self.obj1.getArray())
+
 if __name__ == '__main__':
     unittest.main()
