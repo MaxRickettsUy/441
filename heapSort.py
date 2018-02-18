@@ -68,7 +68,7 @@ def maxHeapInsert(Object,key):
 
 #returns parent node of i
 def PARENT(i):
-    return floor(i/2)
+    return int(floor(i/2))
 
 #returns left child node of i
 #indices starting at 0
@@ -87,31 +87,39 @@ def maxHeapify(Object,i):
     Array = Object.getArray()
     left = LEFT(i)
     right = RIGHT(i)
-    #print("i:" + str(i) + " LEFT:" + str(left) + " RIGHT:" + str(right) )
+    # print("key at " + str(i) + ": " + str(Array[i]))
+    # if left <= (Object.getHeapSize()-1):
+        #print("key at " + str(left) + ": " + str(Array[left]))
+    # if right <= (Object.getHeapSize()-1):
+        #print("key at " + str(right) + ": " + str(Array[right]))
     largest = i
     #print("heap size: " + str(Object.getHeapSize()))
     #if the left child node is in the heap and greater than the parent node
     if left <= (Object.getHeapSize()-1) and Array[left] > Array[i]:
 		largest = left
     #if the right child node is in the heap and greater than the parent node
-    elif right <= (Object.getHeapSize()-1) and Array[right] > Array[largest]:
+    if right <= (Object.getHeapSize()-1) and Array[right] > Array[largest]:
 		largest = right
     #if the parent node is less than its largest child
     if largest != i:
+        #print("largest:" + str(largest))
         temp = Array[i]
         Array[i] = Array[largest]
         Array[largest] = temp
+        #print(Array)
         maxHeapify(Object,largest)
 
 #iterates over Objects array using maxHeapify to make
 #entire array into max heap
 def buildMaxHeap(Object):
     Array = Object.getArray()
-    Object.setHeapSize(len(Array))
-    i = floor(len(Array)/2)
-    while i > 0:
-		maxHeapify(Object,i)
-		i -= 1
+    #Object.setHeapSize(len(Array)) #heapSize set in constructor
+    i = int(math.floor(len(Array)/2)) #starts at last parent node
+    while i >= 0:
+        #print("i:" + str(i))
+        #print("key:" + str(Array[i]))
+        maxHeapify(Object,i)
+        i -= 1
 
 #Objects array begins as entire max heap and
 #and as nodes are removed and array is sorted
