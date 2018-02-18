@@ -131,7 +131,7 @@ def heapsort(Object):
     Array = Object.getArray()
     i = len(Array)-1 #index of last node in array
     while i >= 0:
-        print(i)
+        #print(i)
         temp = Array[0] #grab largest key in heap
         Array[0] = Array[i]
         Array[i] = temp
