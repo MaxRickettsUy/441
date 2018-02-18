@@ -130,18 +130,19 @@ def heapsort(Object):
     buildMaxHeap(Object)
     Array = Object.getArray()
     i = len(Array)-1 #index of last node in array
-    while i > 1:
-		temp = Array[0] #grab largest key in heap
-		Array[0] = Array[i]
-		Array[i] = Array[temp]
-		Object.setHeapSize(Object.getHeapSize()-1)
-		maxHeapify(Object,0)
+    while i >= 0:
+        print(i)
+        temp = Array[0] #grab largest key in heap
+        Array[0] = Array[i]
+        Array[i] = temp
+        Object.setHeapSize(Object.getHeapSize()-1)
+        maxHeapify(Object,0)
+        i-=1
 
-'''if __name__ == "__main__":
+if __name__ == "__main__":
 
 
     array = [1,2,3,4,5,6,7,8,9,10]
     heap = Object(10,array)
-
-    print(heap.getHeapSize())
-'''
+    heapsort(heap)
+    print(heap.getArray())
