@@ -18,6 +18,7 @@ class Object():
         return self.array
 
 #returns root of max heap or first element in array
+#runs in O(lgn) time
 def heapMax(Object):
     Array = Object.getArray()
     return Array[0]
@@ -25,6 +26,7 @@ def heapMax(Object):
 #replaces current root node with last node
 #re-maxHeapifies heap after decreasing total getHeapSize
 #returns max
+#runs in O(lgn) time
 def heapExtractMax(Objecet):
     Array = Object.getArray()
     if Object.heapSize() < 1:
@@ -44,6 +46,7 @@ HEAP-INCREASE-KEY(A,i,key):
         exchange A[i] with A[PARENT(i)]
         i = PARENT(i)
 '''
+#runs in O(lgn) time
 def heapIncreaseKey(Object,i,key):
     Array = Object.getArray()
     if key < Array[i]:
@@ -60,6 +63,7 @@ def heapIncreaseKey(Object,i,key):
     A[A.heap-size] = -infiniti
     HEAP-INCREASE-KEY(A,A.heap-size,key)
 '''
+#runs in O(lgn) time
 def maxHeapInsert(Object,key):
     Array = Object.getArray()
     Object.setHeapSize(Object.getHeapSize()+ 1)
@@ -83,6 +87,7 @@ def RIGHT(i):
 #starting with index i, reorders part ofObjects array
 #into max heap. its possible for other subtrees to lack
 #correct structure and must be maxHeapified themselves
+#runs in O(lgn) time
 def maxHeapify(Object,i):
     Array = Object.getArray()
     left = LEFT(i)
@@ -111,6 +116,7 @@ def maxHeapify(Object,i):
 
 #iterates over Objects array using maxHeapify to make
 #entire array into max heap
+#runs in O(n) time
 def buildMaxHeap(Object):
     Array = Object.getArray()
     #Object.setHeapSize(len(Array)) #heapSize set in constructor
@@ -126,6 +132,7 @@ def buildMaxHeap(Object):
 #the array and max heap become separate based on length
 #the heap sort becomes shorter, while all elements
 #remain in the array but are "removed" from heap
+#runs in O(nlgn) time
 def heapsort(Object):
     buildMaxHeap(Object)
     Array = Object.getArray()
