@@ -7,7 +7,7 @@ Algorithms included:
 
 - [x] Insertion Sort
 - [x] Merge Sort
-- [ ] Heap Sort
+- [x] Heap Sort
 - [ ] Find Max Crossing Subarray
 - [ ] Find Maximum Subarray
 - [ ] Strassen's Algorithm
