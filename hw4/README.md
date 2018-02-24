@@ -8,7 +8,7 @@ Therefore, for each of the above algorithms you should have 15 dots in your plot
 If your results are not what you are expecting then you should do more "runs" or increase the arrays' size range. If your results still contradict the theory then you have accomplished to degrade the performance of at least one algorithm.<br><br>
 
 **Questions:**<br>
-(20 Points) Plot (in the same figure) the running time of each algorithm as the size of the array increases. The running time of each algorithm should be plotted as a continuous function.<br>
-(20 Points) Convert recursive HeapSort into iterative Heapsort (as you were asked in problem 2 of HW3) and plot their running times. Did you expect these results? Why?<br>
-(20 Points) Plot the running time of the QuickSort algorithm when it sorts already sorted arrays vs when it sorts arrays sorted in decreasing order. Do the same for InsertionSort and HeapSort. Briefly explain your results.<br>
+(20 Points) Plot (in the same figure) the running time of each algorithm as the size of the array increases. The running time of each algorithm should be plotted as a continuous function.<br><br>
+(20 Points) Convert recursive HeapSort into iterative Heapsort (as you were asked in problem 2 of HW3) and plot their running times. Did you expect these results? Why?<br><br>
+(20 Points) Plot the running time of the QuickSort algorithm when it sorts already sorted arrays vs when it sorts arrays sorted in decreasing order. Do the same for InsertionSort and HeapSort. Briefly explain your results.<br><br>
 For this programming assignment you should use C++ or Java . Please state in your report which function did you use to time the running time of the algorithms. You should submit a pdf report and your code (implementation) through blackboard. The report should include the plots and your answers to each question.
