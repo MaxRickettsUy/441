@@ -10,9 +10,44 @@
 
 using namespace std;
 
+void printVector(vector<int> vect){
+  for (int i = 0; i < vect.size(); i++){
+    cout << vect.at(i) << " ";
+  }
+  cout << endl;
+}
+
 int main(){
 
-  cout << "hello world" << endl;
+  vector<int> unsorted_vect;
+
+  unsorted_vect = generate_random_ints();
+
+  //copy rand vect in new vector
+  vector<int> insertion_vect(unsorted_vect);
+  vector<int> merge_vect(unsorted_vect);
+  vector<int> heap_sort(unsorted_vect);
+  vector<int> quick_sort(unsorted_vect);
+
+  cout << "insertion_vect before sorting" << endl;
+
+  printVector(insertion_vect);
+
+  insertion_vect = insertionSort(insertion_vect);
+
+  cout << "insertion_vect after sorting" << endl;
+
+  printVector(insertion_vect);
+
+  cout << "merge_vect before sorting" << endl;
+
+  printVector(merge_vect);
+
+  merge_vect = mergeSort(merge_vect,0,merge_vect.size());
+
+  cout << "merge_vect after sorting" << endl;
+
+  printVector(merge_vect);
 
   return 0;
 }
