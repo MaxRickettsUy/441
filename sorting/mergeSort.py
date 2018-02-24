@@ -2,10 +2,10 @@ from math import floor
 #source: https://stackoverflow.com/questions/19085450/merge-sort-in-place-for-python-cant-find-what-is-wrong
 
 ####################pseudocode##########################
-#	
+#
 #	MERGE(A,p,q,r):
-#		n1 = q - p + 1
-#		n2 = r - q
+#		n1 = q - p + 1 //length of left side
+#		n2 = r - q     //length of right side
 #		let L[1 ... n1 +1] and R[1 ... n2+1] be new arrays
 #		for i = 1 to n1
 #			L[i] = A[p + i - 1]
@@ -27,8 +27,8 @@ from math import floor
 def merge(A,p,q,r):
 	L = A[p:q]
 	R = A[q:r]
-	print(L)
-	print(R)
+	#print(L)
+	#print(R)
 	i = 0
 	j = 0
 	k = p
@@ -41,7 +41,7 @@ def merge(A,p,q,r):
 			j = j + 1
 
 ######################pseudocode#########################
-#	
+#
 #	MERGE-SORT(A,p,r)
 #		if p < r
 #			q = floor((p+r)/2)
@@ -57,7 +57,6 @@ def merge_sort(A,p,r):
 		merge_sort(A,p,q)
 		merge_sort(A,q,r)
 		merge(A,p,q,r)
-
 if __name__ == "__main__":
 	A = [3,5,2,1,4]
 	p = 0
