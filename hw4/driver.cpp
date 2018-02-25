@@ -58,7 +58,9 @@ int main(){
 
   cout << "heap_vect after sorting" << endl;
 
-  heapSort(myArray);
+  vector<int>array = heapSort(myArray);
+
+  myArray.setArray(array);
 
   myArray.printArray();
 

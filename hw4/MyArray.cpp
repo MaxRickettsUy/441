@@ -14,14 +14,13 @@
   }
 
   void MyArray::setArray(vector<int> array){
-    if(m_array.empty() == false){
-      for(int i =0; i < array.size(); i++){
-        m_array.pop_back();
-      }
+
+    if(!m_array.empty()){
+      m_array.clear();
     }
 
-    for(int i = 0; i < m_array.size();i++){
-      m_array.push_back(array.at(i));
+    for(int i =0; i < array.size(); i++){
+        m_array.push_back(array.at(i));
     }
   }
 

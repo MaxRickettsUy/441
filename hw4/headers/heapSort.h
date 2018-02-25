@@ -16,10 +16,10 @@ int Left(int i);
 
 int Right(int i);
 
-void maxHeapify(MyArray myArray, int i);
+vector<int> maxHeapify(MyArray myArray, int i);
 
-void buildMaxHeap(MyArray myArray, int i);
+vector<int> buildMaxHeap(MyArray myArray, int i);
 
-void heapSort(MyArray myArray);
+vector<int> heapSort(MyArray myArray);
 
 #endif
