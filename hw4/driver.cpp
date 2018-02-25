@@ -6,6 +6,7 @@
 #include "headers/mergeSort.h"
 #include "headers/heapSort.h"
 #include "headers/quickSort.h"
+#include "headers/MyArray.h"
 #include "iostream"
 
 using namespace std;
@@ -26,7 +27,7 @@ int main(){
   //copy rand vect in new vector
   vector<int> insertion_vect(unsorted_vect);
   vector<int> merge_vect(unsorted_vect);
-  vector<int> heap_sort(unsorted_vect);
+  vector<int> heap_vect(unsorted_vect);
   vector<int> quick_sort(unsorted_vect);
 
   cout << "insertion_vect before sorting" << endl;
@@ -48,6 +49,18 @@ int main(){
   cout << "merge_vect after sorting" << endl;
 
   printVector(merge_vect);
+
+  MyArray myArray(heap_vect.size(),heap_vect);
+
+  cout << "heap_vect before sorting" << endl;
+
+  myArray.printArray();
+
+  cout << "heap_vect after sorting" << endl;
+
+  heapSort(myArray);
+
+  myArray.printArray();
 
   return 0;
 }
