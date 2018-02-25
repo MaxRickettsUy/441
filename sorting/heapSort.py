@@ -27,7 +27,7 @@ def heapMax(Object):
 #re-maxHeapifies heap after decreasing total getHeapSize
 #returns max
 #runs in O(lgn) time
-def heapExtractMax(Objecet):
+def heapExtractMax(Object):
     Array = Object.getArray()
     if Object.heapSize() < 1:
 		print("error: heap underflow")
