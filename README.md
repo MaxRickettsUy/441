@@ -5,12 +5,13 @@ All pseudocode used is originally from <a href="https://mitpress.mit.edu/books/i
 
 Algorithms included:
 
-- [x] Insertion Sort
-- [x] Merge Sort
-- [x] Heap Sort
-- [ ] Counting Sort
-- [ ] Radix Sort
-- [ ] Bucket Sort
+- [x] InsertionSort
+- [x] MergeSort
+- [x] HeapSort
+- [ ] QuickSort
+- [ ] CountingSort
+- [ ] RadixSort
+- [ ] BucketSort
 - [ ] Find Max Crossing Subarray
 - [ ] Find Maximum Subarray
 - [ ] Strassen's Algorithm
