@@ -28,7 +28,7 @@ int main(){
   vector<int> insertion_vect(unsorted_vect);
   vector<int> merge_vect(unsorted_vect);
   vector<int> heap_vect(unsorted_vect);
-  vector<int> quick_sort(unsorted_vect);
+  vector<int> quick_vect(unsorted_vect);
 
   cout << "insertion_vect before sorting" << endl;
 
@@ -63,6 +63,17 @@ int main(){
   myArray.setArray(array);
 
   myArray.printArray();
+
+  cout << "quick_vect before sorting" << endl;
+
+  printVector(quick_vect);
+
+  //passing reference to quick_vect
+  quickSort(&quick_vect,0,quick_vect.size());
+
+  cout << "quick_vect after sorting" << endl;
+
+  printVector(quick_vect);
 
   return 0;
 }
