@@ -69,7 +69,7 @@ int main(){
   printVector(quick_vect);
 
   //passing reference to quick_vect
-  quickSort(&quick_vect,0,quick_vect.size());
+  quickSort(&quick_vect,0,(quick_vect.size()-1));
 
   cout << "quick_vect after sorting" << endl;
 
