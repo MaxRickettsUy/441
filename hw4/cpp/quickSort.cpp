@@ -1,4 +1,4 @@
-#include "headers/quickSort.h"
+#include "../headers/quickSort.h"
 #include <iostream>
 /*
 PARTITION(A,p,r):

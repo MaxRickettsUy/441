@@ -2,7 +2,7 @@
   Generates vector of 1000 random integers and returns vector
 */
 
-#include "headers/rand_ints.h"
+#include "../headers/rand_ints.h"
 #include <cstdlib>
 
 vector<int> generate_random_ints(int num_ints){

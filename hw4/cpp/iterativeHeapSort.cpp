@@ -1,4 +1,4 @@
-#include "headers/iterativeHeapSort.h"
+#include "../headers/iterativeHeapSort.h"
 #include <iostream>
 
 int iheapMax(vector<int> *vect){

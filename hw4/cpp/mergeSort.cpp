@@ -1,4 +1,4 @@
-#include "headers/mergeSort.h"
+#include "../headers/mergeSort.h"
 #include <iostream>
 
 void printCurrentVector(vector<int> vect){

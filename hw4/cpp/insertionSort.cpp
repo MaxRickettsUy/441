@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "headers/insertionSort.h"
+#include "../headers/insertionSort.h"
 
 /*pseudocode
 INSERTION-SORT(A)				           cost	times

@@ -1,4 +1,4 @@
-#include "headers/heapSort.h"
+#include "../headers/heapSort.h"
 
 int heapMax(vector<int> *vect){
   return (*vect)[0];
