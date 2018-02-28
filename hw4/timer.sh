@@ -86,3 +86,43 @@ echo -e "\nquickSort" >> results.csv
 (time ./driver.out 10000 4) 2>> results.csv
 
 echo "-----------------------------------" >> results.csv
+
+echo "100000 ints" >> results.csv
+
+echo -e "\ninsertionSort" >> results.csv
+
+(time ./driver.out 100000 1) 2>> results.csv
+
+echo -e "\nmergeSort" >> results.csv
+
+(time ./driver.out 100000 2) 2>> results.csv
+
+echo -e "\nheapSort" >> results.csv
+
+(time ./driver.out 100000 3) 2>> results.csv
+
+echo -e "\nquickSort" >> results.csv
+
+(time ./driver.out 100000 4) 2>> results.csv
+
+echo "-----------------------------------" >> results.csv
+
+echo "1000000 ints" >> results.csv
+
+echo -e "\ninsertionSort" >> results.csv
+
+(time ./driver.out 1000000 1) 2>> results.csv
+
+echo -e "\nmergeSort" >> results.csv
+
+(time ./driver.out 1000000 2) 2>> results.csv
+
+echo -e "\nheapSort" >> results.csv
+
+(time ./driver.out 1000000 3) 2>> results.csv
+
+echo -e "\nquickSort" >> results.csv
+
+(time ./driver.out 1000000 4) 2>> results.csv
+
+echo "-----------------------------------" >> results.csv
