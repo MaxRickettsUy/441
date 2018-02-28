@@ -7,7 +7,7 @@
 make clean
 make
 
-echo "10 ints" > results.csv
+echo "100 ints" > results.csv
 
 echo -e "\ninsertionSort" >> results.csv
 
@@ -27,7 +27,7 @@ echo -e "\nquickSort" >> results.csv
 
 echo "-----------------------------------" >> results.csv
 
-echo "100 ints" >> results.csv
+echo "150 ints" >> results.csv
 
 echo -e "\ninsertionSort" >> results.csv
 
@@ -47,7 +47,7 @@ echo -e "\nquickSort" >> results.csv
 
 echo "-----------------------------------" >> results.csv
 
-echo "1000 ints" >> results.csv
+echo "200 ints" >> results.csv
 
 echo -e "nnsertionSort" >> results.csv
 
@@ -67,7 +67,7 @@ echo -e "\nquickSort" >> results.csv
 
 echo "-----------------------------------" >> results.csv
 
-echo "10000 ints" >> results.csv
+echo "250 ints" >> results.csv
 
 echo -e "\ninsertionSort" >> results.csv
 
@@ -87,42 +87,224 @@ echo -e "\nquickSort" >> results.csv
 
 echo "-----------------------------------" >> results.csv
 
-echo "100000 ints" >> results.csv
+echo "300 ints" >> results.csv
 
 echo -e "\ninsertionSort" >> results.csv
 
-(time ./driver.out 100000 1) 2>> results.csv
+(time ./driver.out 20000 1) 2>> results.csv
 
 echo -e "\nmergeSort" >> results.csv
 
-(time ./driver.out 100000 2) 2>> results.csv
+(time ./driver.out 20000 2) 2>> results.csv
 
 echo -e "\nheapSort" >> results.csv
 
-(time ./driver.out 100000 3) 2>> results.csv
+(time ./driver.out 20000 3) 2>> results.csv
 
 echo -e "\nquickSort" >> results.csv
 
-(time ./driver.out 100000 4) 2>> results.csv
+(time ./driver.out 2s0000 4) 2>> results.csv
 
 echo "-----------------------------------" >> results.csv
 
-echo "1000000 ints" >> results.csv
+echo "350 ints" >> results.csv
 
 echo -e "\ninsertionSort" >> results.csv
 
-(time ./driver.out 1000000 1) 2>> results.csv
+(time ./driver.out 30000 1) 2>> results.csv
 
 echo -e "\nmergeSort" >> results.csv
 
-(time ./driver.out 1000000 2) 2>> results.csv
+(time ./driver.out 30000 2) 2>> results.csv
 
 echo -e "\nheapSort" >> results.csv
 
-(time ./driver.out 1000000 3) 2>> results.csv
+(time ./driver.out 30000 3) 2>> results.csv
 
 echo -e "\nquickSort" >> results.csv
 
-(time ./driver.out 1000000 4) 2>> results.csv
+(time ./driver.out 30000 4) 2>> results.csv
+
+echo "-----------------------------------" >> results.csv
+
+echo "400 ints" >> results.csv
+
+echo -e "\ninsertionSort" >> results.csv
+
+(time ./driver.out 30000 1) 2>> results.csv
+
+echo -e "\nmergeSort" >> results.csv
+
+(time ./driver.out 30000 2) 2>> results.csv
+
+echo -e "\nheapSort" >> results.csv
+
+(time ./driver.out 30000 3) 2>> results.csv
+
+echo -e "\nquickSort" >> results.csv
+
+(time ./driver.out 30000 4) 2>> results.csv
+
+echo "-----------------------------------" >> results.csv
+
+echo "450 ints" >> results.csv
+
+echo -e "\ninsertionSort" >> results.csv
+
+(time ./driver.out 30000 1) 2>> results.csv
+
+echo -e "\nmergeSort" >> results.csv
+
+(time ./driver.out 30000 2) 2>> results.csv
+
+echo -e "\nheapSort" >> results.csv
+
+(time ./driver.out 30000 3) 2>> results.csv
+
+echo -e "\nquickSort" >> results.csv
+
+(time ./driver.out 30000 4) 2>> results.csv
+
+echo "-----------------------------------" >> results.csv
+
+echo "550 ints" >> results.csv
+
+echo -e "\ninsertionSort" >> results.csv
+
+(time ./driver.out 30000 1) 2>> results.csv
+
+echo -e "\nmergeSort" >> results.csv
+
+(time ./driver.out 30000 2) 2>> results.csv
+
+echo -e "\nheapSort" >> results.csv
+
+(time ./driver.out 30000 3) 2>> results.csv
+
+echo -e "\nquickSort" >> results.csv
+
+(time ./driver.out 30000 4) 2>> results.csv
+
+echo "-----------------------------------" >> results.csv
+
+echo "750 ints" >> results.csv
+
+echo -e "\ninsertionSort" >> results.csv
+
+(time ./driver.out 30000 1) 2>> results.csv
+
+echo -e "\nmergeSort" >> results.csv
+
+(time ./driver.out 30000 2) 2>> results.csv
+
+echo -e "\nheapSort" >> results.csv
+
+(time ./driver.out 30000 3) 2>> results.csv
+
+echo -e "\nquickSort" >> results.csv
+
+(time ./driver.out 30000 4) 2>> results.csv
+
+echo "-----------------------------------" >> results.csv
+
+echo "950 ints" >> results.csv
+
+echo -e "\ninsertionSort" >> results.csv
+
+(time ./driver.out 30000 1) 2>> results.csv
+
+echo -e "\nmergeSort" >> results.csv
+
+(time ./driver.out 30000 2) 2>> results.csv
+
+echo -e "\nheapSort" >> results.csv
+
+(time ./driver.out 30000 3) 2>> results.csv
+
+echo -e "\nquickSort" >> results.csv
+
+(time ./driver.out 30000 4) 2>> results.csv
+
+echo "-----------------------------------" >> results.csv
+
+echo "1150 ints" >> results.csv
+
+echo -e "\ninsertionSort" >> results.csv
+
+(time ./driver.out 30000 1) 2>> results.csv
+
+echo -e "\nmergeSort" >> results.csv
+
+(time ./driver.out 30000 2) 2>> results.csv
+
+echo -e "\nheapSort" >> results.csv
+
+(time ./driver.out 30000 3) 2>> results.csv
+
+echo -e "\nquickSort" >> results.csv
+
+(time ./driver.out 30000 4) 2>> results.csv
+
+echo "-----------------------------------" >> results.csv
+
+
+echo "1250 ints" >> results.csv
+
+echo -e "\ninsertionSort" >> results.csv
+
+(time ./driver.out 30000 1) 2>> results.csv
+
+echo -e "\nmergeSort" >> results.csv
+
+(time ./driver.out 30000 2) 2>> results.csv
+
+echo -e "\nheapSort" >> results.csv
+
+(time ./driver.out 30000 3) 2>> results.csv
+
+echo -e "\nquickSort" >> results.csv
+
+(time ./driver.out 30000 4) 2>> results.csv
+
+echo "-----------------------------------" >> results.csv
+
+
+echo "1350 ints" >> results.csv
+
+echo -e "\ninsertionSort" >> results.csv
+
+(time ./driver.out 30000 1) 2>> results.csv
+
+echo -e "\nmergeSort" >> results.csv
+
+(time ./driver.out 30000 2) 2>> results.csv
+
+echo -e "\nheapSort" >> results.csv
+
+(time ./driver.out 30000 3) 2>> results.csv
+
+echo -e "\nquickSort" >> results.csv
+
+(time ./driver.out 30000 4) 2>> results.csv
+
+echo "-----------------------------------" >> results.csv
+
+echo "1500 ints" >> results.csv
+
+echo -e "\ninsertionSort" >> results.csv
+
+(time ./driver.out 30000 1) 2>> results.csv
+
+echo -e "\nmergeSort" >> results.csv
+
+(time ./driver.out 30000 2) 2>> results.csv
+
+echo -e "\nheapSort" >> results.csv
+
+(time ./driver.out 30000 3) 2>> results.csv
+
+echo -e "\nquickSort" >> results.csv
+
+(time ./driver.out 30000 4) 2>> results.csv
 
 echo "-----------------------------------" >> results.csv

@@ -7,6 +7,7 @@
   2 = mergeSort
   3 = heapSort
   4 = quickSort
+  5 = iterativeHeapSort
 
   there are four sections in the bottom half of this file that calls each algorithm based on the sort arg
   there are print statements to display the input array, <sortname>_vect for each algorithm before and after sorting
@@ -18,6 +19,7 @@
 #include "headers/mergeSort.h"
 #include "headers/heapSort.h"
 #include "headers/quickSort.h"
+#include "headers/iterativeHeapSort.h"
 #include <cstdlib>
 #include "iostream"
 
@@ -60,6 +62,7 @@ int main(int argc, char *argv[]){
   vector<int> merge_vect(unsorted_vect);
   vector<int> heap_vect(unsorted_vect);
   vector<int> quick_vect(unsorted_vect);
+  vector<int> iterative_vect(unsorted_vect);
 
   //string answer = prompt("insertionSort");
 
@@ -138,5 +141,24 @@ int main(int argc, char *argv[]){
   }
 
 /******************** end quick sort *************************/
+
+/******************** end iterative heap sort *************************/
+
+  if(sort == "5"){
+
+    //cout << "iterative_vect before sorting" << endl;
+
+    // printVector(iterative_vect);
+
+    iterativeHeapSort(&iterative_vect);
+
+    // cout << "iterative_vect after sorting" << endl;
+
+    // printVector(iterative_vect);
+  }
+
+/******************** end iterative heap sort *************************/
+
+
   return 0;
 }
