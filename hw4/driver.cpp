@@ -67,15 +67,15 @@ int main(int argc, char *argv[]){
 
   if(sort == "1"){
 
-    cout << "insertion_vect before sorting" << endl;
-
-    printVector(insertion_vect);
+    // cout << "insertion_vect before sorting" << endl;
+    //
+    // printVector(insertion_vect);
 
     insertion_vect = insertionSort(insertion_vect);
 
-    cout << "insertion_vect after sorting" << endl;
-
-    printVector(insertion_vect);
+    // cout << "insertion_vect after sorting" << endl;
+    //
+    // printVector(insertion_vect);
   }
 
 /******************** end insertion sort ********************/
@@ -86,15 +86,15 @@ int main(int argc, char *argv[]){
 
   if(sort == "2"){
 
-    cout << "merge_vect before sorting" << endl;
-
-    printVector(merge_vect);
+    // cout << "merge_vect before sorting" << endl;
+    //
+    // printVector(merge_vect);
 
     merge_vect = mergeSort(merge_vect,0,merge_vect.size());
 
-    cout << "merge_vect after sorting" << endl;
-
-    printVector(merge_vect);
+    // cout << "merge_vect after sorting" << endl;
+    //
+    // printVector(merge_vect);
   }
 
 /******************** end merge sort ********************/
@@ -105,15 +105,15 @@ int main(int argc, char *argv[]){
 
   if(sort == "3"){
 
-    cout << "heap_vect before sorting" << endl;
-
-    printVector(heap_vect);
-
-    cout << "heap_vect after sorting" << endl;
+    // cout << "heap_vect before sorting" << endl;
+    //
+    // printVector(heap_vect);
+    //
+    // cout << "heap_vect after sorting" << endl;
 
     heapSort(&heap_vect);
 
-    printVector(heap_vect);
+    // printVector(heap_vect);
 
   }
 
@@ -125,16 +125,16 @@ int main(int argc, char *argv[]){
 
   if(sort == "4"){
 
-    cout << "quick_vect before sorting" << endl;
-
-    printVector(quick_vect);
+    // cout << "quick_vect before sorting" << endl;
+    //
+    // printVector(quick_vect);
 
     //passing reference to quick_vect
     quickSort(&quick_vect,0,(quick_vect.size()-1));
 
-    cout << "quick_vect after sorting" << endl;
-
-    printVector(quick_vect);
+    // cout << "quick_vect after sorting" << endl;
+    //
+    // printVector(quick_vect);
   }
 
 /******************** end quick sort *************************/
