@@ -70,15 +70,15 @@ int main(int argc, char *argv[]){
 
   if(sort == "1"){
 
-    // cout << "insertion_vect before sorting" << endl;
-    //
-    // printVector(insertion_vect);
+    cout << "insertion_vect before sorting" << endl;
+
+    printVector(insertion_vect);
 
     insertion_vect = insertionSort(insertion_vect);
 
-    // cout << "insertion_vect after sorting" << endl;
-    //
-    // printVector(insertion_vect);
+    cout << "insertion_vect after sorting" << endl;
+
+    printVector(insertion_vect);
   }
 
 /******************** end insertion sort ********************/
