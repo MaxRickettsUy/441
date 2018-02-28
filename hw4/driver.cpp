@@ -18,9 +18,20 @@ void printVector(vector<int> vect){
   cout << endl;
 }
 
-int main(){
+string prompt(string sort){
+
+  string answer = "";
+  cout << "call " << sort << " ?(yes or no): ";
+  cin >> answer;
+  return answer;
+
+}
+
+int main(int argc, char *argv[]){
 
   vector<int> unsorted_vect;
+
+  string sort = argv[1];
 
   unsorted_vect = generate_random_ints();
 
@@ -30,50 +41,84 @@ int main(){
   vector<int> heap_vect(unsorted_vect);
   vector<int> quick_vect(unsorted_vect);
 
-  cout << "insertion_vect before sorting" << endl;
+  //string answer = prompt("insertionSort");
 
-  printVector(insertion_vect);
+/******************** start insertion sort ********************/
 
-  insertion_vect = insertionSort(insertion_vect);
+  if(sort == "1"){
 
-  cout << "insertion_vect after sorting" << endl;
+    cout << "insertion_vect before sorting" << endl;
 
-  printVector(insertion_vect);
+    printVector(insertion_vect);
 
-  cout << "merge_vect before sorting" << endl;
+    insertion_vect = insertionSort(insertion_vect);
 
-  printVector(merge_vect);
+    cout << "insertion_vect after sorting" << endl;
 
-  merge_vect = mergeSort(merge_vect,0,merge_vect.size());
+    printVector(insertion_vect);
+  }
 
-  cout << "merge_vect after sorting" << endl;
+/******************** end insertion sort ********************/
 
-  printVector(merge_vect);
+  //answer = prompt("mergeSort");
 
-  MyArray myArray(heap_vect.size(),heap_vect);
+/******************** start merge sort ************************/
 
-  cout << "heap_vect before sorting" << endl;
+  if(sort == "2"){
+    cout << "merge_vect before sorting" << endl;
 
-  myArray.printArray();
+    printVector(merge_vect);
 
-  cout << "heap_vect after sorting" << endl;
+    merge_vect = mergeSort(merge_vect,0,merge_vect.size());
 
-  vector<int>array = heapSort(myArray);
+    cout << "merge_vect after sorting" << endl;
 
-  myArray.setArray(array);
+    printVector(merge_vect);
+  }
 
-  myArray.printArray();
+/******************** end merge sort ********************/
 
-  cout << "quick_vect before sorting" << endl;
+  //answer = prompt("heapSort");
 
-  printVector(quick_vect);
+/******************** start heap sort *************************/
 
-  //passing reference to quick_vect
-  quickSort(&quick_vect,0,(quick_vect.size()-1));
+  if(sort == "3"){
 
-  cout << "quick_vect after sorting" << endl;
+    MyArray myArray(heap_vect.size(),heap_vect);
 
-  printVector(quick_vect);
+    cout << "heap_vect before sorting" << endl;
 
+    myArray.printArray();
+
+    cout << "heap_vect after sorting" << endl;
+
+    vector<int>array = heapSort(myArray);
+
+    myArray.setArray(array);
+
+    myArray.printArray();
+  }
+
+/******************** end heap sort *************************/
+
+  // answer = prompt("quickSort");
+
+/******************** start quick sort *************************/
+
+  if(sort == "4"){
+
+    cout << "quick_vect before sorting" << endl;
+
+    printVector(quick_vect);
+
+    //passing reference to quick_vect
+    quickSort(&quick_vect,0,(quick_vect.size()-1));
+
+    cout << "quick_vect after sorting" << endl;
+
+    printVector(quick_vect);
+  }
+
+/******************** end quick sort *************************/
   return 0;
 }
