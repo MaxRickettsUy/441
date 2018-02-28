@@ -84,19 +84,16 @@ int main(int argc, char *argv[]){
 
   if(sort == "3"){
 
-    MyArray myArray(heap_vect.size(),heap_vect);
-
     cout << "heap_vect before sorting" << endl;
 
-    myArray.printArray();
+    printVector(heap_vect);
 
     cout << "heap_vect after sorting" << endl;
 
-    vector<int>array = heapSort(myArray);
+    heapSort(&heap_vect);
 
-    myArray.setArray(array);
+    printVector(heap_vect);
 
-    myArray.printArray();
   }
 
 /******************** end heap sort *************************/
