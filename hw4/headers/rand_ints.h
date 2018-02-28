@@ -5,6 +5,6 @@
 #include <vector>
 using namespace std;
 
-vector<int> generate_random_ints();
+vector<int> generate_random_ints(int num_ints);
 
 #endif
