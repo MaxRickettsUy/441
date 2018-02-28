@@ -1,0 +1,55 @@
+100 ints
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.004s
+
+real	0m0.007s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m0.014s
+user	0m0.008s
+sys	0m0.004s
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+
+1000 ints
+
+real	0m0.013s
+user	0m0.008s
+sys	0m0.000s
+
+real	0m0.016s
+user	0m0.012s
+sys	0m0.000s
+
+real	0m0.760s
+user	0m0.752s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.004s
+sys	0m0.000s
+
+10000 ints
+
+real	0m0.586s
+user	0m0.440s
+sys	0m0.000s
+
+real	0m0.501s
+user	0m0.412s
+sys	0m0.080s
+
+real	0m0.050s
+user	0m0.016s
+sys	0m0.000s
+
+100000 ints
+
+real	0m0.379s
+user	0m0.096s
+sys	0m0.004s
