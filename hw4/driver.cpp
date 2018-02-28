@@ -6,7 +6,6 @@
 #include "headers/mergeSort.h"
 #include "headers/heapSort.h"
 #include "headers/quickSort.h"
-#include "headers/MyArray.h"
 #include "iostream"
 
 using namespace std;
