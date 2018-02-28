@@ -18,6 +18,7 @@
 #include "headers/mergeSort.h"
 #include "headers/heapSort.h"
 #include "headers/quickSort.h"
+#include <cstdlib>
 #include "iostream"
 
 using namespace std;
@@ -43,12 +44,13 @@ int main(int argc, char *argv[]){
 
   if(argc < 3){
     cout << "please enter 2 arguments following executable" << endl;
-    exit(1);
+    return(1);
   }
 
   vector<int> unsorted_vect;
 
-  int num_ints = *argv[1] - '0';
+
+  int num_ints = atoi(argv[1]);
   string sort = argv[2];
 
   unsorted_vect = generate_random_ints(num_ints);
@@ -65,15 +67,15 @@ int main(int argc, char *argv[]){
 
   if(sort == "1"){
 
-    //cout << "insertion_vect before sorting" << endl;
+    cout << "insertion_vect before sorting" << endl;
 
-    //printVector(insertion_vect);
+    printVector(insertion_vect);
 
     insertion_vect = insertionSort(insertion_vect);
 
-    //out << "insertion_vect after sorting" << endl;
+    cout << "insertion_vect after sorting" << endl;
 
-    //printVector(insertion_vect);
+    printVector(insertion_vect);
   }
 
 /******************** end insertion sort ********************/
@@ -83,15 +85,16 @@ int main(int argc, char *argv[]){
 /******************** start merge sort ************************/
 
   if(sort == "2"){
-    //cout << "merge_vect before sorting" << endl;
 
-    //printVector(merge_vect);
+    cout << "merge_vect before sorting" << endl;
+
+    printVector(merge_vect);
 
     merge_vect = mergeSort(merge_vect,0,merge_vect.size());
 
-    //cout << "merge_vect after sorting" << endl;
+    cout << "merge_vect after sorting" << endl;
 
-    //printVector(merge_vect);
+    printVector(merge_vect);
   }
 
 /******************** end merge sort ********************/
@@ -102,15 +105,15 @@ int main(int argc, char *argv[]){
 
   if(sort == "3"){
 
-    //cout << "heap_vect before sorting" << endl;
+    cout << "heap_vect before sorting" << endl;
 
-    //printVector(heap_vect);
+    printVector(heap_vect);
 
-    //cout << "heap_vect after sorting" << endl;
+    cout << "heap_vect after sorting" << endl;
 
     heapSort(&heap_vect);
 
-    //printVector(heap_vect);
+    printVector(heap_vect);
 
   }
 
@@ -122,16 +125,16 @@ int main(int argc, char *argv[]){
 
   if(sort == "4"){
 
-    //cout << "quick_vect before sorting" << endl;
+    cout << "quick_vect before sorting" << endl;
 
-    //printVector(quick_vect);
+    printVector(quick_vect);
 
     //passing reference to quick_vect
     quickSort(&quick_vect,0,(quick_vect.size()-1));
 
-    //cout << "quick_vect after sorting" << endl;
+    cout << "quick_vect after sorting" << endl;
 
-    //printVector(quick_vect);
+    printVector(quick_vect);
   }
 
 /******************** end quick sort *************************/
