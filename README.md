@@ -8,7 +8,7 @@ Algorithms included:
 - [x] InsertionSort
 - [x] MergeSort
 - [x] HeapSort
-- [ ] QuickSort
+- [x] QuickSort
 - [ ] CountingSort
 - [ ] RadixSort
 - [ ] BucketSort
