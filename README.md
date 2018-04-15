@@ -14,3 +14,4 @@ Algorithms included:
 - [ ] Find Max Crossing Subarray
 - [ ] Find Maximum Subarray
 - [ ] Strassen's Algorithm
+- [ ] Dijkstra's Algorithm
