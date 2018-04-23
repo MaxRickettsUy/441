@@ -15,3 +15,8 @@ Algorithms included:
 - [ ] Find Maximum Subarray
 - [ ] Strassen's Algorithm
 - [ ] Dijkstra's Algorithm
+- [ ] DFS
+- [ ] BFS 
+- [ ] Kruskal's Algorithm
+- [ ] Prim's Algorithm
+- [ ] Bellamn - Ford Algorithm
