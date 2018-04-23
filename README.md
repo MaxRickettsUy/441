@@ -1,6 +1,6 @@
 # Algorithms Covered in Design &amp; Analysis of Algorithms
 
-All pseudocode used is originally from <a href="https://mitpress.mit.edu/books/introduction-algorithms">CLRS.</a><br>
+All pseudocode used can be found in <a href="https://mitpress.mit.edu/books/introduction-algorithms">CLRS.</a><br>
 
 Algorithms included:
 
@@ -19,4 +19,4 @@ Algorithms included:
 - [ ] BFS 
 - [ ] Kruskal's Algorithm
 - [ ] Prim's Algorithm
-- [ ] Bellamn - Ford Algorithm
+- [ ] Bellman - Ford Algorithm
