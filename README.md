@@ -4,7 +4,7 @@ All pseudocode used can be found in <a href="https://mitpress.mit.edu/books/intr
 
 Algorithms included:
 
-- [x] InsertionSort
+- [x] [InsertionSort](https://github.com/MaxRickettsUy/441/blob/master/sorting/insertionSort.py)
 - [x] MergeSort
 - [x] HeapSort
 - [x] QuickSort
