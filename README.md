@@ -6,7 +6,7 @@ Algorithms included:
 
 - [x] [InsertionSort](https://github.com/MaxRickettsUy/441/blob/master/sorting/insertionSort.py)
 - [x] [MergeSort](https://github.com/MaxRickettsUy/441/blob/master/sorting/mergeSort.py)
-- [x] HeapSort
+- [x] [HeapSort](https://github.com/MaxRickettsUy/441/blob/master/sorting/heapSort.py)
 - [x] QuickSort
 - [ ] CountingSort
 - [ ] RadixSort
