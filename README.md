@@ -5,7 +5,7 @@ All pseudocode used can be found in <a href="https://mitpress.mit.edu/books/intr
 Algorithms included:
 
 - [x] [InsertionSort](https://github.com/MaxRickettsUy/441/blob/master/sorting/insertionSort.py)
-- [x] MergeSort
+- [x] [MergeSort](https://github.com/MaxRickettsUy/441/blob/master/sorting/mergeSort.py)
 - [x] HeapSort
 - [x] QuickSort
 - [ ] CountingSort
